@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoaFácil - Plataforma de Doação de Alimentos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>DoaFácil</h1>
+        <h3>Plataforma de Doação de Alimentos</h3>
+        <nav>
+        <a href="#">Home</a>
+        <a href="#">Doações</a>
+        <a href="#">Cadastrar Doação</a>
+        </nav>
+    </header>
+
+    <section id="mapa">
+        <h2>Mapa de Doações</h2>
+        <div id="map"></div>
+    </section>
+
+    <section id="lista-doacoes">
+        <h2>Doações Disponíveis</h2>
+        <div id="filtros">
+        <label for="categoria">Filtrar por Categoria:</label>
+        <select id="categoria">
+            <option value="todas">Todas</option>
+            <option value="perecivel">Perecível</option>
+            <option value="nao-perecivel">Não Perecível</option>
+        </select>
+        </div>
+        <ul id="doacoes-lista">
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 DoaFácil - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
